@@ -40,7 +40,7 @@ export const STEPS = [
     title: "久しぶりに名前を呼ばれて喜んでいるみたいだ。\n次は、君が何才なのを教えてあげてくれるかな？\n数字は「半角」で入力するんだよ。",
     question: "エニアックにあなたの年を教えてあげましょう。",
     updateKey: "age",
-    validator: (str, state) => /^\d*$/.test(str),
+    validator: (str, state) => /^\d$/.test(str),
   },
   {
     stage: 1.4,
