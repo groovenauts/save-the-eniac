@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueLogger from 'vuejs-logger'
 import store from './vuex/store'
 import App from './App'
+import './assets/img/favicon.ico'
 
 const options = {
   logLevel : 'debug',
