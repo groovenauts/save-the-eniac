@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <start v-if="currentPage.type === 'start'" />
+    <hero v-if="currentPage.type === 'hero'" />
+    <question v-if="currentPage.type === 'question'" />
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import { mapGetters } from 'vuex'
+import Start from './components/Start'
+import Hero from './components/Hero'
+import Question from './components/Question'
 
 export default {
   name: 'app',
   components: {
-    Hello
-  }
+    Start,
+    Hero,
+    Question,
+  },
+  computed: {
+    ...mapGetters(['currentPage'])
+  },  
 }
 </script>
 

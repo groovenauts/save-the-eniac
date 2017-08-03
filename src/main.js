@@ -1,12 +1,20 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import VueLogger from 'vuejs-logger'
+import store from './vuex/store'
 import App from './App'
 
+const options = {
+  logLevel : 'debug',
+  // optional : defaults to false if not specified 
+  stringifyArguments : false,
+  // optional : defaults to false if not specified 
+  showLogLevel : false
+}
+Vue.use(VueLogger, options)
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
 new Vue({
+  store,
   el: '#app',
   template: '<App/>',
   components: { App }
