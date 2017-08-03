@@ -151,7 +151,7 @@ export const STEPS = [
     type: "question",
     title: "これをエニアックが覚えればもう充電切れしないね！\nエニアックが理解しやすいように、書き換えてあげることはできるかな？",
     question: "もし\nA が B よりも少ないなら\nC する。",
-    answer: "A = '充電の残り'\nB = 3\nC = '電池を交換'\nif (ここを入力してね) {\n  C\n}",
+    placeholder: "A = '充電の残り'\nB = 3\nC = '電池を交換'\nif (ここを入力してね) {\n  C\n}",
     answer: "A = '充電の残り'\nB = 3\nC = '電池を交換'\nif () {\n  C\n}",
     validator: (str, state) => {
       const str2 = _.replace(str, /\s*/g, '')
