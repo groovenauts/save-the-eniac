@@ -95,7 +95,7 @@ export const STEPS = [
     title: "さっき作った電池をエニアックに渡したんだけど、どっちが＋で−なのか迷っているみたい。\n途中まではわかるみたいだから、少し手助けしてあげて。\n今度も、記号の中に言葉が隠れているみたいだよ。",
     question: "もし電池の先が A なら＋。\n1 =でっぱっている\n2 =ひらべったい",
     placeholder: "A の中に入るのは1? 2?",
-    validator: (str, state) => /^1$/.test(str),
+    validator: (str, state) => /^\d+$/.test(str),
   },
   {
     stage: 3.2,
