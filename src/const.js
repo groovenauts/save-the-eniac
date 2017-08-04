@@ -15,7 +15,7 @@ export const STEPS = [
     type: "hero",
     title: "エニアックを助けよう",
     body: "ここに充電できずに困っているコンピューター「エニアック」がいます。\nあなたはこれから彼に話しかけて、充電するのを手助けしてあげましょう。\n\nコンピューターと話すにはいろいろなことばのルールを覚えなくてはいけません。\nはたして、あなたはエニアックを無事に充電することができるでしょうか？",
-    image: require("./assets/img/img_stage0-3.png")
+    image: require("./assets/img/img_stage0-3.gif")
   },
   {
     stage: 1.1,
@@ -56,7 +56,7 @@ export const STEPS = [
     type: "hero",
     title: "自己紹介クリア！",
     body: "エニアックにうまく計算してもらうことができたね！\nこんな風に、正しい言葉を使えば、エニアックと話したりいろんな事をお願いすることができるんだ。\n\n次からはもう少し難しいルールを使ったお話の方法を勉強してみよう。",
-    image: require("./assets/img/img_eniac_charge.png")
+    image: require("./assets/img/img_eniac_charge.gif")
   },
   {
     stage: 2.1,
@@ -87,7 +87,7 @@ export const STEPS = [
     type: "hero",
     title: "電池が完成！",
     body: "無事に電池を作ることができたね。\nどうやらエニアックは「言葉や数字が隠れた」記号を使ってお話するのが得意みたいだ。\nこの記号を使って、もうすこしいろいろな話をしてみよう。",
-    image: require("./assets/img/img_battery.png")
+    image: require("./assets/img/img_battery.gif")
   },
   {
     stage: 3.1,
@@ -163,6 +163,6 @@ export const STEPS = [
     type: "hero",
     title: "エニアックの充電完了！",
     body: "{{name}}のおかげで、エニアックもすっかり元気になったね！\n「もし〜なら〜する」という話し方を完璧に覚えれば\nコンピュータといろんなことができるようになるよ。\n\nもしもっとお話したいことがあれば、また会いに来てね。\nエニアックと一緒に待ってるよ。",
-    image: require("./assets/img/img_stage_end.png")
+    image: require("./assets/img/img_stage_end.gif")
   },
 ]

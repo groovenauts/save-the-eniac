@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="header">
-      <img class="right" src="../assets/img/img_mauchly.png"/>
+      <img class="right" src="../assets/img/img_mauchly.gif"/>
       <img class="left" src="../assets/img/img_cloud_small.png"/>
       <div class="title"><pre>{{currentPage.title}}</pre></div>
       <div class="nav">
@@ -24,7 +24,7 @@
       <img v-else-if="power > 9" class="content-right" src="../assets/img/img_power_gage_full.png"/>
     </div>
     <footer class="footer">
-      <img class="right" src="../assets/img/img_eniac_charge.png" />
+      <img class="right" src="../assets/img/img_eniac_charge.gif" />
       <img class="left" src="../assets/img/img_raptop.png" />
     </footer>
     <img v-if="correct" class="button" src="../assets/img/btn_next.png" alt="次へ" @click="NEXT_PAGE"/>
