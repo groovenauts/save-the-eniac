@@ -11,7 +11,12 @@ Vue.use(Vuex)
 const state = {
   page: 0,
   currentPage: STEPS[0],
-  steps: STEPS,
+  steps: _.map(STEPS, (step, i) => {
+    return {
+      ...step,
+      key: `page-${i}`,
+    }
+  }),
   name: "",
   age: "",
   power: 0,

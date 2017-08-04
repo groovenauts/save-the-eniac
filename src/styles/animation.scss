@@ -1,0 +1,12 @@
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-enter-active {
+  animation: slide-in .6s;
+}

@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+#question {
+  height: 100%;
+  width: 100%;
+}
+
 .header {
   height: 230px;
   min-height: 230px;
@@ -82,7 +87,7 @@
 }
 
 .content {
-  height: calc(100% - (220px - 144px - 20px));
+  height: calc(100% - 384px);
   display: flex;
   align-items: center;
   padding: 10px 30px;

@@ -1,6 +1,5 @@
 import _ from 'lodash'
 import types from './mutation-types'
-import { STEPS } from '../const'
 
 export default {
   [types.NEXT_PAGE] (state) {

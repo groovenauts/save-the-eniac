@@ -1,11 +1,13 @@
 <template>
-  <div>
-    <div class="box">
-      <div class="title"><pre>{{currentPage.title}}</pre></div>
-      <div class="subtitle">{{currentPage.subtitle}}</div>
+  <transition name="slide">
+    <div id="start" :key="currentPage.key">
+      <div class="box">
+        <div class="title"><pre>{{currentPage.title}}</pre></div>
+        <div class="subtitle">{{currentPage.subtitle}}</div>
+      </div>
+        <img class="button" src="../assets/img/btn_start.png" alt="はじめる" @click="NEXT_PAGE"/>
     </div>
-    <img class="button" src="../assets/img/btn_start.png" alt="はじめる" @click="NEXT_PAGE"/>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -24,5 +26,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../styles/start.scss'
+  @import '../styles/start.scss';
+  @import '../styles/animation.scss';
 </style>

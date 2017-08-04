@@ -1,15 +1,17 @@
 <template>
-  <div>
-    <div class="title">{{currentPage.title}}</div>
-    <div class="box">
-      <div class="image">
-        <img :src="currentPage.image" />
+  <transition name="slide">
+    <div id="hero" :key="currentPage.key">
+      <div class="title">{{currentPage.title}}</div>
+      <div class="box">
+        <div class="image">
+          <img :src="currentPage.image" />
+        </div>
+        <div class="body"><pre>{{currentPage.body}}</pre></div>
       </div>
-      <div class="body"><pre>{{currentPage.body}}</pre></div>
+        <img v-if="isEndPage(steps, page)" class="button" src="../assets/img/btn_end.png" alt="おしまい"/>
+        <img v-else class="button" src="../assets/img/btn_next.png" alt="次へ" @click="NEXT_PAGE"/>
     </div>
-    <img v-if="isEndPage(steps, page)" class="button" src="../assets/img/btn_end.png" alt="おしまい"/>
-    <img v-else class="button" src="../assets/img/btn_next.png" alt="次へ" @click="NEXT_PAGE"/>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -35,5 +37,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../styles/hero.scss'
+  @import '../styles/hero.scss';
+  @import '../styles/animation.scss';
 </style>
