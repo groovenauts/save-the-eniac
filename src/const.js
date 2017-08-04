@@ -63,7 +63,7 @@ export const STEPS = [
     type: "question",
     title: "エニアックを充電するために、電池を作らなきゃいけないんだけど、\n電池の中に入れる電解液の配合が書かれた紙が汚れてよめなくなっちゃった。\nA の中に入る数字がわかるかな？",
     question: "Aの中に入る数字がわかるかな？\nA＋1=5",
-    placeholder: "A = ",
+    placeholder: "Aの値を入力してね",
     validator: (str, state) => /A\s*=\s*4$|^4$/.test(str),
   },
   {
