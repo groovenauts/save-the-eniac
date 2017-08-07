@@ -15,8 +15,8 @@
         <div class="line"></div>
         <div class="center">
           <textarea rows="9" :placeholder="currentPage.placeholder" :value="answer" :disabled="correct" @change="CHANGE_ANSWER"></textarea>
-          <img v-if="showGoodStamp(showStamp, correct)" class="stamp" src="../assets/img/img_stamp_good.png" />
-          <img v-else-if="showChallengeStamp(showStamp, correct)" class="stamp" src="../assets/img/img_stamp_challenge.png" />
+          <img v-if="showGoodStamp(showStamp, correct)" class="stamp ban" src="../assets/img/img_stamp_good.png" />
+          <img v-else-if="showChallengeStamp(showStamp, correct)" class="stamp ban" src="../assets/img/img_stamp_challenge.png" />
         </div>
         <img v-if="power === 0" class="content-right" src="../assets/img/img_power_gage_empty.png"/>
         <img v-else-if="power === 3" class="content-right" src="../assets/img/img_power_gage_3.png"/>

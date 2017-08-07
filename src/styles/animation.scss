@@ -10,3 +10,12 @@
 .slide-enter-active {
   animation: slide-in .6s;
 }
+
+@keyframes ban {
+  from {
+    transform: translate(-50%, -50%) rotate(-30deg) scale(5);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
