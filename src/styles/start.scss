@@ -35,5 +35,7 @@
   height: 160px;
   &:hover {
     opacity: 0.8;
+    transform: translate(-50%, -4%);
+    transition: .8s;
   }
 }
