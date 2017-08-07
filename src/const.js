@@ -77,9 +77,9 @@ export const STEPS = [
     stage: 2.3,
     type: "question",
     title: "もう少しで配合できそうだよ。\n今度は、記号の中に、数字じゃなくてことばが隠れているみたい。\nこたえがわかるかな？",
-    question: "A=私の名前は\nB=エニアック",
+    question: "A=ぼくの名前は\nB=エニアック",
     placeholder: "A + B の結果を入力してね",
-    validator: (str, state) => /^私の名前はエニアック$/.test(str),
+    validator: (str, state) => /^ぼくの名前はエニアック$/.test(str),
     power: 6
   },
   {
