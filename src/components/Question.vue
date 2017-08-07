@@ -28,7 +28,7 @@
         <img class="right" src="../assets/img/img_eniac_charge.gif" />
         <img class="left" src="../assets/img/img_raptop.png" />
       </footer>
-      <img v-if="correct" class="button" src="../assets/img/btn_next.png" alt="次へ" @click="NEXT_PAGE"/>
+      <img v-if="correct && !showStamp" class="button" src="../assets/img/btn_next.png" alt="次へ" @click="NEXT_PAGE"/>
       <img v-else class="button" src="../assets/img/btn_ok.png" alt="OK" @click="CHECK_ANSWER"/>
       <!--img v-else-if="!!answer" class="button" src="../assets/img/btn_ok.png" alt="OK" @click="CHECK_ANSWER"/>
       <img v-else class="button" src="../assets/img/btn_ok_disable.png" alt="OK"/-->
