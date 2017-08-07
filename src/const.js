@@ -37,7 +37,7 @@ export const STEPS = [
   {
     stage: 1.3,
     type: "question",
-    title: "久しぶりに名前を呼ばれて喜んでいるみたいだ。\n次は、君が何才なのを教えてあげてくれるかな？\n数字は「半角」で入力するんだよ。",
+    title: "久しぶりに名前を呼ばれて喜んでいるみたいだ。\n次は、{{name}}が何才なのを教えてあげてくれるかな？\n数字は「半角」で入力するんだよ。",
     question: "エニアックにあなたの年を教えてあげましょう。",
     updateKey: "age",
     validator: (str, state) => /^\d+$/.test(str),
@@ -47,7 +47,6 @@ export const STEPS = [
     type: "question",
     title: "{{name}}は{{age}}才なんだね！\nエニアックは71才だから、彼のほうがずっと大人だね。\nエニアックと君はいくつ年が違うのかわかるかい？\n計算記号をうまく使えば、エニアックに計算してもらうことができるよ。",
     question: "エニアックとあなたはいくつ年がちがう？計算記号を正しく使って、エニアックに計算してもらおう。",
-    updateKey: "age",
     placeholder: "例）足し算の場合は「71 + {{age}} =」と入力するよ",
     validator: (str, state) => new RegExp(`71\\s*\-\\s*${state.age}\\s*=?`).test(str),
     power: 3,
