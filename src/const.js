@@ -151,7 +151,7 @@ export const STEPS = [
     answer: "もしAが3(メモリ)より''なら'電池を交換'する",
     validator: (str, state) => {
       const str2 = _.replace(str, /[\s、,\'\"]*/g, '')
-      return "もしAが3メモリより少ないら電池を交換する" === str2
+      return "もしAが3(メモリ)より少ないなら電池を交換する" === str2
     },
   },
   {
