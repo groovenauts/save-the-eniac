@@ -1,8 +1,8 @@
-# help-eniac
+# Save the ENIAC
 
 > Experience programming for Kids
 
-[Play here!](https://nacanori.github.io/help-eniac/)
+[Play here!](https://groovenauts.github.io/save-the-eniac/)
 
 
 ## Build Setup
