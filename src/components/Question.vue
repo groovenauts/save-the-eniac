@@ -2,8 +2,8 @@
   <transition name="slide">
     <div id="question" :key="currentPage.key">
       <header class="header">
-        <img class="right" src="../assets/img/img_mauchly.gif"/>
-        <img class="left" src="../assets/img/img_cloud_small.png"/>
+        <img class="left" src="../assets/img/img_mauchly.gif"/>
+        <img class="right" src="../assets/img/img_cloud_small.png"/>
         <div class="title"><pre>{{currentPage.title}}</pre></div>
         <div class="nav">
           <div class="title">{{toStageTitle(currentPage.stage)}}</div>
@@ -14,7 +14,7 @@
         <div class="content-left"><pre>{{currentPage.question}}</pre></div>
         <div class="line"></div>
         <div class="center">
-          <textarea rows="9" :placeholder="currentPage.placeholder" :value="answer" :disabled="correct" @change="CHANGE_ANSWER"></textarea>
+          <textarea :placeholder="currentPage.placeholder" :value="answer" :disabled="correct" @change="CHANGE_ANSWER"></textarea>
           <img v-if="showGoodStamp(showStamp, correct)" class="stamp ban" src="../assets/img/img_stamp_good.png" />
           <img v-else-if="showChallengeStamp(showStamp, correct)" class="stamp ban" src="../assets/img/img_stamp_challenge.png" />
         </div>

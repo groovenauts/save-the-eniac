@@ -8,31 +8,31 @@
 }
 
 .header {
-  height: 230px;
-  min-height: 230px;
-  max-height: 230px;
+  height: 28vh;
+  min-height: 28vh;
+  max-height: 28vh;
   text-align: center;
   background: linear-gradient(to bottom, #BBDEFB, white);
   position: relative;
 
   .right {
-    z-index: 102;
+    z-index: 103;
+    height: 14vh;
     position: absolute;
-    height: 156px;
-    top: 8px;
-    left: 16px;
+    top: -2vh;
+    right: -10px;
   }
   .left {
-    z-index: 103;
-    height: 100px;
+    z-index: 102;
     position: absolute;
-    top: -20px;
-    right: -10px;
+    height: 25vh;
+    top: 0;
+    left: 14px;
   }
   > .title {
     z-index: 101;
     display: inline-block;
-    font-size: 26px;
+    font-size: 3vh;
     font-weight: 500;
     line-height: 1.3em;
     letter-spacing: 1px;
@@ -40,16 +40,16 @@
     background-repeat: no-repeat;
     background-size: contain;
     text-align: left;
-    // height: 100%;
-    height: 200px;
-    right: 30px;
-    margin-left: 80px;
-    margin-top: 30px;
-    padding-left: 56px;
-    padding-top: 16px;
+    height: 28vh;
+    width: calc(100vw - 14vh - 6vh - 5vh);
+    left: 6vh;
+    margin-left: 14vh;
+    margin-top: 2.4vh;
+    padding-left: 8vh;
+    padding-top: 2vh;
     position: absolute;
-    left: 26px;
     > pre {
+      display: inline-block;
       white-space: pre-wrap;
     }
   }
@@ -60,24 +60,24 @@
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    top: 156px;
-    left: -20px;
-    width: 230px;
-    height: 152px;
+    top: 19vh;
+    left: -2%;
+    width: 16vw;
+    height: 18vh;
     z-index: 100;
     display: flex;
     flex-direction: column;
     color: #1E88E5;
 
     > .title {
-      font-size: 30px;
+      font-size: 3.5vh;
       font-weight: 600;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
     }
     > .subtitle {
-      font-size: 14px;
+      font-size: 2vh;
       font-weight: 500;
       position: relative;
       top: 50%;
@@ -87,14 +87,14 @@
 }
 
 .content {
-  height: calc(100% - 384px);
+  height: calc(100% - 48vh);
   display: flex;
   align-items: center;
-  padding: 10px 30px;
+  padding: 2vh 3vw;
 
   > .content-left {
     flex: 20;
-    font-size: 38px;
+    font-size: 4.8vh;
     font-weight: 600;
     line-height: 1.3em;
     letter-spacing: 1.2px;
@@ -105,20 +105,21 @@
   }
   > .line {
     flex: 1;
-    height: 400px;
+    height: 46vh;
     border-left: #E0E0E0 solid 3px;
   }
   > .center {
     flex: 20;
-    font-size: 24px;
+    font-size: 2.2vh;
     // font-weight: 600;
     line-height: 1.2em;
+    height: 90%;
     width: 96%;
     position: relative;
 
     .stamp {
       z-index: 201;
-      height: 300px;
+      height: 36vh;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -130,18 +131,18 @@
   }
   > .content-right {
     flex: 2;
-    height: 400px;
+    height: 50vh;
     > img {
       background-size: contain;
     }
   }
   textarea {
     width: 96%;
-    height: 100%;
-    font-size: 30px;
+    height: 46vh;
+    font-size: 4.5vh;
     border-radius: 5px;
     border: #EEEEEE solid 2px;
-    padding: 10px;
+    padding: 1vw;
     resize: none;
     background-color: #FAFAFA;
 
@@ -152,22 +153,20 @@
 }
 
 .footer {
-  height: 144px;
+  height: 20vh;
   width: 100%;
   position: absolute;
   bottom: 0px;
-  // padding: 8px 10px;
-  padding: 8px 10px 0px 10px;
-  background: linear-gradient(#fff 50%, #FFFDE7 50%);
+  background: linear-gradient(rgba(0,0,0,0), #FFFDE7 50%);
   > .right {
-    height: 126px;
+    height: 16vh;
     position: absolute;
     bottom: 0px;
     right: 0px;
     margin: 8px;
   }
   > .left {
-    height: 92px;
+    height: 14vh;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -177,13 +176,13 @@
 
 .button {
   z-index: 200;
-  height: 180px;
+  height: 18vh;
   position: absolute;
   transform: translateX(-50%);
   left: 45.5%;
   cursor: pointer;
   bottom: 0px;
-  padding-bottom: 20px;
+  margin-bottom: 3.5vh;
   &:hover {
     opacity: 0.8;
     transform: translate(-50%, -4%);
