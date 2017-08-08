@@ -1,7 +1,9 @@
 <template>
   <transition name="slide">
     <div id="hero" :key="currentPage.key">
-      <div class="title">{{currentPage.title}}</div>
+      <div class="title">
+        <vue-typer class="title" :type-delay='160' :text="currentPage.title" :repeat='0'></vue-typer>
+      </div>
       <div class="box">
         <div class="image">
           <img :src="currentPage.image" />
@@ -18,6 +20,7 @@
 import { mapGetters, mapActions } from 'vuex'
 import types from '../vuex/mutation-types'
 import _ from 'lodash'
+import { VueTyper } from 'vue-typer'
 
 export default {
   computed: {
@@ -32,6 +35,9 @@ export default {
       types.NEXT_PAGE,
     ]),
     isEndPage: (steps, page) => _.size(steps)-1 === page,
+  },
+  components: {
+    'vue-typer': VueTyper,
   },
 }
 </script>
